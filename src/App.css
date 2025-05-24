@@ -1,38 +1,65 @@
-.App {
+nav {
+  margin: 20px 0;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a {
+  color: #357ABD;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 12px;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #4a90e2;
+  border-radius: 2px;
+  transition: width 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav a:hover {
+  color: #1a4d8f;
 }
 
-.App-link {
-  color: #61dafb;
+nav a:hover::after {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a:focus {
+  outline: none;
+  color: #1a4d8f;
+}
+
+nav a:focus::after {
+  width: 100%;
+  background: #2467c9;
+  box-shadow: 0 0 5px #2467c9;
+}
+
+/* Separador (barra) estilizada */
+nav a + a::before {
+  content: "|";
+  color: #aaa;
+  margin: 0 10px;
+  user-select: none;
+}
+
+/* Para o link ativo (opcional se quiser indicar a página atual) */
+nav a.active {
+  color: #1a4d8f;
+  font-weight: 700;
+}
+
+nav a.active::after {
+  width: 100%;
+  background: #1a4d8f;
 }

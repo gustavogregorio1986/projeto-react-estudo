@@ -1,0 +1,61 @@
+/* Calculadora.css */
+
+.quadrado {
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 420px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quadrado h3 {
+  color: #1a73e8;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+input[type="number"] {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  transition: border 0.3s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+.botoes {
+  margin-top: 15px;
+}
+
+.botoes button {
+  margin: 8px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+  background-color: #155ec1;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}

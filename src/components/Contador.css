@@ -1,0 +1,38 @@
+.quadrado {
+  background-color: #f4f4f4;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #1e3a5f; /* azul escuro */
+  text-align: center;
+  max-width: 300px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.quadrado h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.quadrado p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #555;
+}
+
+.quadrado button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quadrado button:hover {
+  background-color: #0056b3;
+}
