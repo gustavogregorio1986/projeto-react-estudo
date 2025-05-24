@@ -6,6 +6,8 @@ import Verificacao from "./components/Verificacao";
 import './App.css';
 import Tabuada from "./components/Tabuada";
 import ContadorAteNumero from "./components/ContadorAteNumero";
+import GraficoShopping from "./components/GraficoShopping";
+import AviõesVoandoAgora from "./components/AviõesVoandoAgora";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Link to="/verificacao">Verificação</Link>
           <Link to="/tabuada">Tabuada</Link>
           <Link to="/contadorAteNumero">Contador ate numero</Link>
+          <Link to="/graficoShopping">Grafico Shopping</Link>
+          <Link to="/aviõesVoandoAgora">Aviões voando</Link>
         </nav>
 
         <Routes>
@@ -25,6 +29,8 @@ function App() {
           <Route path="/verificacao" element={<Verificacao />} />
           <Route path="/Tabuada" element={<Tabuada />} />
           <Route path="/ContadorAteNumero" element={<ContadorAteNumero />} />
+          <Route path="/GraficoShopping" element={<GraficoShopping />} />
+          <Route path="/AviõesVoandoAgora" element={<AviõesVoandoAgora />} />
         </Routes>
       </div>
     </Router>
